@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#f6f5f0">
+    <meta name="description" content="Explore MindMaze, a two-player mobile memory game with three board sizes, turn-based scoring, and a winner screen.">
+    <title>MindMaze | Emily</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,500;1,600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="portfolio.css">
+    <script src="portfolio.js" defer></script>
+</head>
+<body>
+    <header class="site-header" id="top">
+        <a class="wordmark" href="./index.html" aria-label="Emily, home">emily<span>.</span></a>
+        <nav class="site-nav" aria-label="Main navigation">
+            <a href="./index.html">Home</a>
+            <a href="./projects.html">Projects</a>
+            <a href="./about.html">About</a>
+            <a href="./experience.html">Experience</a>
+            <a class="nav-contact" href="mailto:emilyting05312017@gmail.com">Let's talk <span aria-hidden="true">↗</span></a>
+        </nav>
+    </header>
+
+    <main class="case-study case-mindmaze page-wrap">
+        <a class="case-back" href="./projects.html#project-list"><span aria-hidden="true">←</span> Back to projects</a>
+
+        <section class="case-hero" aria-labelledby="case-title">
+            <div class="case-hero-copy">
+                <p class="eyebrow">Mobile Game <span class="case-eyebrow-divider">/</span> 2023</p>
+                <h1 id="case-title">Mind<em>Maze.</em></h1>
+                <p class="case-intro">A two-player memory game where players take turns matching pairs, collecting points, and competing to finish with the highest score.</p>
+                <div class="case-facts" aria-label="Project overview">
+                    <div><span>PROJECT</span><strong>Mobile memory game</strong></div>
+                    <div><span>PLAYERS</span><strong>Two players, taking turns</strong></div>
+                    <div><span>MODES</span><strong>4 × 4 · 4 × 5 · 4 × 6</strong></div>
+                </div>
+            </div>
+            <figure class="case-hero-image">
+                <img src="./mindmazematch.jpeg" alt="MindMaze two-player matching game showing player scores and a grid of cards" fetchpriority="high">
+                <figcaption><span>01 — MATCH THE PAIRS</span><span>Two-player game</span></figcaption>
+            </figure>
+        </section>
+
+        <section class="case-feature case-feature-modes" aria-labelledby="mindmaze-modes-title">
+            <figure class="case-image-frame">
+                <img src="./mindmaze.jpeg" alt="MindMaze home screen with 4 by 4, 4 by 5, and 4 by 6 game mode buttons" loading="lazy">
+                <figcaption>Choose a board size to begin</figcaption>
+            </figure>
+            <div class="case-feature-copy">
+                <p class="eyebrow">01 / Choose your challenge</p>
+                <h2 id="mindmaze-modes-title">Three ways to <em>play.</em></h2>
+                <p>A soft, light-coloured interface helps make the memory game comfortable to use. Players can choose a 4 × 4, 4 × 5, or 4 × 6 board, adding variety and different levels of challenge.</p>
+                <span class="case-feature-note">A mode for every mood and memory.</span>
+            </div>
+        </section>
+
+        <section class="case-feature" aria-labelledby="mindmaze-match-title">
+            <div class="case-feature-copy">
+                <p class="eyebrow">02 / Two-player turns</p>
+                <h2 id="mindmaze-match-title">Remember. Match. <em>Score.</em></h2>
+                <p>Players take turns uncovering cards and earn points for successful matches. Scores stay visible in the top corners, and the active-player label—P1 or P2—makes each turn clear. The player with the highest score when the board is complete wins.</p>
+                <span class="case-feature-note">Take turns and keep an eye on the score.</span>
+            </div>
+            <figure class="case-image-frame case-image-match">
+                <img src="./mindmazematch.jpeg" alt="Memory game in progress, with P1 and P2 scores at the top and matching cards revealed" loading="lazy">
+                <figcaption>Scores and card matches during a round</figcaption>
+            </figure>
+        </section>
+
+        <section class="case-feature case-feature-modes" aria-labelledby="mindmaze-puzzle-title">
+            <figure class="case-image-frame case-image-puzzle">
+                <img src="./mindmazepuzzle.jpeg" alt="MindMaze larger card grid with player scores and face-down cards" loading="lazy">
+                <figcaption>A larger board increases the challenge</figcaption>
+            </figure>
+            <div class="case-feature-copy">
+                <p class="eyebrow">03 / A growing challenge</p>
+                <h2 id="mindmaze-puzzle-title">More cards. More <em>to remember.</em></h2>
+                <p>Boards grow from 4 × 4 to 4 × 5 and 4 × 6, making each mode progressively more complex. Turn indicators distinguish the active player from the waiting player, so both people can follow the round.</p>
+                <span class="case-feature-note">Increasing board sizes add a fresh challenge.</span>
+            </div>
+        </section>
+
+        <section class="case-feature" aria-labelledby="mindmaze-results-title">
+            <div class="case-feature-copy">
+                <p class="eyebrow">04 / Game results</p>
+                <h2 id="mindmaze-results-title">A winner—and <em>what’s next.</em></h2>
+                <p>Once all pairs have been found, a Game Over message announces the final scores and winner. Players can start a new round or exit to the main screen and choose another mode.</p>
+                <span class="case-feature-note">Celebrate the win or jump into another round.</span>
+            </div>
+            <figure class="case-image-frame case-image-results">
+                <img src="./mindmazeresults.jpeg" alt="MindMaze Game Over dialog showing both player scores and options to exit or start a new round" loading="lazy">
+                <figcaption>Final scores and replay options</figcaption>
+            </figure>
+        </section>
+
+        <div class="case-study-footer">
+            <p>Ready for another round?</p>
+            <a class="projects-button" href="./projects.html#project-list">Explore more projects <span aria-hidden="true">↗</span></a>
+        </div>
+    </main>
+
+    <footer class="site-footer page-wrap">
+        <span>© <span id="year">2026</span> Emily Ting Yuen Yee. Made with care.</span>
+        <div class="footer-links">
+            <a href="https://github.com/Emily050606?tab=repositories" target="_blank" rel="noreferrer">GitHub <span aria-hidden="true">↗</span></a>
+            <a href="https://www.linkedin.com/in/emily-ting59319028a/" target="_blank" rel="noreferrer">LinkedIn <span aria-hidden="true">↗</span></a>
+            <a href="#top">Back to top ↑</a>
+        </div>
+    </footer>
+</body>
+</html>

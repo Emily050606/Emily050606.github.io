@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#f6f5f0">
+    <meta name="description" content="Explore QNow, an online queueing system with a customer app and a web dashboard for restaurant staff and managers.">
+    <title>QNow Queueing System | Emily</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,500;1,600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="portfolio.css">
+    <script src="portfolio.js" defer></script>
+</head>
+<body>
+    <header class="site-header" id="top">
+        <a class="wordmark" href="./index.html" aria-label="Emily, home">emily<span>.</span></a>
+        <nav class="site-nav" aria-label="Main navigation">
+            <a href="./index.html">Home</a>
+            <a href="./projects.html">Projects</a>
+            <a href="./about.html">About</a>
+            <a href="./experience.html">Experience</a>
+            <a class="nav-contact" href="mailto:emilyting05312017@gmail.com">Let's talk <span aria-hidden="true">↗</span></a>
+        </nav>
+    </header>
+
+    <main class="case-study case-qnow page-wrap">
+        <a class="case-back" href="./index.html#work"><span aria-hidden="true">←</span> Back to selected work</a>
+
+        <section class="case-hero" aria-labelledby="case-title">
+            <div class="case-hero-copy">
+                <p class="eyebrow">Software Engineering Project <span class="case-eyebrow-divider">/</span> 2025</p>
+                <h1 id="case-title">QNow <em>Queueing.</em></h1>
+                <p class="case-intro">A customer app for finding restaurants and joining queues, paired with a web dashboard for staff and managers.</p>
+                <div class="case-facts" aria-label="Project overview">
+                    <div><span>PROJECT</span><strong>Online queueing system</strong></div>
+                    <div><span>FOR</span><strong>Restaurant customers &amp; teams</strong></div>
+                    <div><span>PLATFORMS</span><strong>Customer app · Admin web app</strong></div>
+                </div>
+            </div>
+            <figure class="case-hero-image case-hero-phone">
+                <img src="./qnowcust.jpeg" alt="QNow customer app home screen with welcome message, Petaling Jaya location, restaurant search, cuisine categories, and restaurant listings" fetchpriority="high">
+                <figcaption><span>01 — FIND A PLACE</span><span>Customer mobile app</span></figcaption>
+            </figure>
+        </section>
+
+        <section class="case-feature case-qnow-customer" aria-labelledby="case-customer-title">
+            <div class="case-feature-copy">
+                <p class="eyebrow">01 / Customer app</p>
+                <h2 id="case-customer-title">From a craving to <em>a queue.</em></h2>
+                <p>The home screen greets customers by name, shows their detected city, and offers search for restaurants or food. Categories and restaurant listings help them find a place to queue.</p>
+                <span class="case-feature-note">Restaurant discovery, ready to go.</span>
+            </div>
+            <figure class="case-image-frame case-phone-frame">
+                <img src="./qnowcust.jpeg" alt="QNow app showing the Hi, Mimi greeting, current city, food search, categories, and nearby restaurant listings" loading="lazy">
+                <figcaption>Restaurant search and discovery in the customer app</figcaption>
+            </figure>
+        </section>
+
+        <section class="case-feature case-qnow-login" aria-labelledby="case-login-title">
+            <figure class="case-image-frame case-phone-frame case-phone-login">
+                <img src="./qnowlogin.jpeg" alt="QNow mobile login screen with email and password fields, sign-in and sign-up buttons, and an email verification notice" loading="lazy">
+                <figcaption>Customer login and registration confirmation</figcaption>
+            </figure>
+            <div class="case-feature-copy">
+                <p class="eyebrow">02 / Customer access</p>
+                <h2 id="case-login-title">A simple sign-in, with <em>email verification.</em></h2>
+                <p>Customers sign in with their registered email and password, or create an account from the same screen. A verification link is emailed after registration; opening it confirms the account and displays a success page.</p>
+                <span class="case-feature-note">Registered email · Password · Verification link</span>
+            </div>
+        </section>
+
+        <section class="case-security" aria-labelledby="case-admin-title">
+            <div class="case-section-heading">
+                <p class="eyebrow">03 / Staff &amp; manager web app</p>
+                <h2 id="case-admin-title">One view to keep <em>service moving.</em></h2>
+                <p>The web dashboard helps restaurant teams monitor branches, manage queues, and check in customers. Shin Zushi USJ is the reference branch for testing and demonstrations.</p>
+            </div>
+
+            <article class="case-feature case-qnow-dashboard" aria-labelledby="case-dashboard-title">
+                <div class="case-feature-copy">
+                    <p class="eyebrow">Branch overview</p>
+                    <h2 id="case-dashboard-title">Choose a branch. Know <em>what’s next.</em></h2>
+                    <p>Select a Shin Zushi branch to view its serving number, queue total, and estimated wait. Shin Zushi USJ is the testing reference.</p>
+                    <span class="case-feature-note">Branch selection · Now serving · Queue total · Estimated wait</span>
+                </div>
+                <figure class="case-image-frame case-qnow-web-frame">
+                    <img src="./qnowcheckin.jpeg" alt="QNow GM dashboard with now-serving, total-queue, and average-waiting-time cards, branch selector, and customer check form" loading="lazy">
+                    <figcaption>Branch selection and service overview</figcaption>
+                </figure>
+            </article>
+
+            <article class="case-feature case-qnow-manage" aria-labelledby="case-manage-title">
+                <figure class="case-image-frame case-qnow-web-frame">
+                    <img src="./qnowtotalqueue.jpeg" alt="QNow current queue table with date selection, status filter, customer details, and waiting or checked-in statuses" loading="lazy">
+                    <figcaption>Current queue records with status and date filters</figcaption>
+                </figure>
+                <div class="case-feature-copy">
+                    <p class="eyebrow">Queue management</p>
+                    <h2 id="case-manage-title">Every booking, <em>in view.</em></h2>
+                    <p>Staff can review current and past queue records, filter by Waiting, Checked In, or Cancelled, and call or cancel a reservation when a customer does not arrive.</p>
+                    <span class="case-feature-note">Filter, review, and manage queue records.</span>
+                </div>
+            </article>
+
+            <article class="case-feature case-qnow-checkin" aria-labelledby="case-checkin-title">
+                <div class="case-feature-copy">
+                    <p class="eyebrow">Customer check-in</p>
+                    <h2 id="case-checkin-title">Keep the line <em>up to date.</em></h2>
+                    <p>Staff see the current serving number, queue total, and estimated wait; queue numbers reset daily. They check in customers by phone number.</p>
+                    <p>A queue that is not being served shows “Queue number AX is not now serving. Please check the now serving customer.” An unmatched phone shows “No customer selected”; successful check-ins and cancellations require confirmation. Shin Zushi USJ is the reference branch.</p>
+                    <span class="case-feature-note">Phone lookup · Serving status · Confirmed check-in</span>
+                </div>
+                <figure class="case-image-frame case-qnow-web-frame">
+                    <img src="./qnowqueue.jpeg" alt="QNow staff check-in page showing current serving number, total queue, average waiting time, and customer phone lookup" loading="lazy">
+                    <figcaption>Customer lookup and check-in interface</figcaption>
+                </figure>
+            </article>
+        </section>
+
+        <div class="case-study-footer">
+            <p>One queue. Two connected experiences.</p>
+            <a class="projects-button" href="./projects.html">Explore more projects <span aria-hidden="true">↗</span></a>
+        </div>
+    </main>
+
+    <footer class="site-footer page-wrap">
+        <span>© <span id="year">2026</span> Emily Ting Yuen Yee. Made with care.</span>
+        <div class="footer-links">
+            <a href="https://github.com/Emily050606?tab=repositories" target="_blank" rel="noreferrer">GitHub <span aria-hidden="true">↗</span></a>
+            <a href="https://www.linkedin.com/in/emily-ting59319028a/" target="_blank" rel="noreferrer">LinkedIn <span aria-hidden="true">↗</span></a>
+            <a href="#top">Back to top ↑</a>
+        </div>
+    </footer>
+</body>
+</html>

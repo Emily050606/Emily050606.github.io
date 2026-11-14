@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#f6f5f0">
+    <meta name="description" content="Explore HuanFitnessPal, a wellness web app for fitness tracking, memberships, nutritionist appointments, and water consumption history.">
+    <title>HuanFitnessPal | Emily</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,500;1,600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="portfolio.css">
+    <script src="portfolio.js" defer></script>
+</head>
+<body>
+    <header class="site-header" id="top">
+        <a class="wordmark" href="./index.html" aria-label="Emily, home">emily<span>.</span></a>
+        <nav class="site-nav" aria-label="Main navigation">
+            <a href="./index.html">Home</a>
+            <a href="./projects.html">Projects</a>
+            <a href="./about.html">About</a>
+            <a href="./experience.html">Experience</a>
+            <a class="nav-contact" href="mailto:emilyting05312017@gmail.com">Let's talk <span aria-hidden="true">↗</span></a>
+        </nav>
+    </header>
+
+    <main class="case-study case-fitness page-wrap">
+        <a class="case-back" href="./projects.html#project-list"><span aria-hidden="true">←</span> Back to projects</a>
+
+        <section class="case-hero" aria-labelledby="case-title">
+            <div class="case-hero-copy">
+                <p class="eyebrow">Health &amp; Wellness <span class="case-eyebrow-divider">/</span> Web App</p>
+                <h1 id="case-title">Huan<br><em>FitnessPal.</em></h1>
+                <p class="case-intro">A wellness platform bringing fitness tracking, membership, nutritionist appointments, and everyday health records together in one place.</p>
+                <div class="case-facts" aria-label="Project overview">
+                    <div><span>PROJECT</span><strong>Health &amp; fitness web app</strong></div>
+                    <div><span>FOCUS</span><strong>Personal wellness tracking</strong></div>
+                    <div><span>FEATURES</span><strong>Membership · Exercise · Water · Nutrition</strong></div>
+                </div>
+            </div>
+            <figure class="case-hero-image">
+                <img src="./fitnesshome.png" alt="HuanFitnessPal homepage with welcome content and links to nutritionists, exercise, body weight, and water consumption" fetchpriority="high">
+                <figcaption><span>01 — YOUR WELLNESS HOME</span><span>Homepage</span></figcaption>
+            </figure>
+        </section>
+
+        <section class="case-feature" aria-labelledby="fitness-home-title">
+            <div class="case-feature-copy">
+                <p class="eyebrow">01 / Homepage</p>
+                <h2 id="fitness-home-title">A starting point for <em>everybody.</em></h2>
+                <p>The homepage welcomes both logged-in and guest users, with content tailored to their login status. It acts as the central hub for exploring the site’s wellness tools, including exercise logging, water tracking, and nutritionist appointments.</p>
+                <span class="case-feature-note">A clear route to the tools that support your wellbeing.</span>
+            </div>
+            <figure class="case-image-frame">
+                <img src="./fitnesshome.png" alt="Homepage featuring wellness information, nutritionist appointments, exercise, body weight, and water tracking" loading="lazy">
+                <figcaption>Homepage navigation and wellness features</figcaption>
+            </figure>
+        </section>
+
+        <section class="case-security" aria-labelledby="fitness-membership-title">
+            <div class="case-section-heading">
+                <p class="eyebrow">02 / Membership</p>
+                <h2 id="fitness-membership-title">Choose a class and <em>join in.</em></h2>
+                <p>Membership sign-up guides users from entering their details to confirming a successful payment.</p>
+            </div>
+            <div class="case-membership-cards">
+                <article class="case-membership-card">
+                    <figure class="case-image-frame case-image-signup">
+                        <img src="./fitnesssignup.png" alt="HuanFitnessPal membership sign-up form for entering personal details and selecting a fitness class" loading="lazy">
+                        <figcaption>Membership details and class selection</figcaption>
+                    </figure>
+                    <div class="case-card-copy">
+                        <span class="case-step">A · SIGN UP</span>
+                        <h3>Pick your membership.</h3>
+                        <p>Selecting the membership sign-up button opens a form where users enter their details and choose a fitness class.</p>
+                    </div>
+                </article>
+                <article class="case-membership-card">
+                    <figure class="case-image-frame case-image-member">
+                        <img src="./fitnessmember.png" alt="HuanFitnessPal payment success page confirming membership activation" loading="lazy">
+                        <figcaption>Successful membership payment</figcaption>
+                    </figure>
+                    <div class="case-card-copy">
+                        <span class="case-step">B · PAYMENT SUCCESS</span>
+                        <h3>Confirmation after payment.</h3>
+                        <p>The success page confirms that payment was processed and membership activated. If an active member tries to sign up again, the site reports their current status and expiry date, one month after the original sign-up.</p>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <section class="case-feature" aria-labelledby="fitness-exercise-title">
+            <div class="case-feature-copy">
+                <p class="eyebrow">03 / Exercise history</p>
+                <h2 id="fitness-exercise-title">Keep your progress <em>in view.</em></h2>
+                <p>The Exercise section opens with a log of previously recorded workouts, organized by exercise and date. Users can review entries and edit or delete a record when needed.</p>
+                <span class="case-feature-note">Log it · Review it · Keep moving.</span>
+            </div>
+            <figure class="case-image-frame case-image-exercise">
+                <img src="./fitnessexercise.png" alt="HuanFitnessPal exercise form and logged exercise table with edit and delete actions" loading="lazy">
+                <figcaption>Exercise logging and history</figcaption>
+            </figure>
+        </section>
+
+        <section class="case-feature case-feature-appointment" aria-labelledby="fitness-appointment-title">
+            <figure class="case-image-frame case-image-appointment">
+                <img src="./fitnessappointment.png" alt="Nutritionist appointment request form and appointment history with dates, nutritionists, and request statuses" loading="lazy">
+                <figcaption>Nutritionist request form and appointment status</figcaption>
+            </figure>
+            <div class="case-feature-copy">
+                <p class="eyebrow">04 / Nutritionist appointments</p>
+                <h2 id="fitness-appointment-title">Support from a <em>specialist.</em></h2>
+                <p>Users can request a nutritionist by choosing appointment details, then review their appointments and see whether each request is pending, accepted, or rejected. They can book another appointment or return home.</p>
+                <span class="case-feature-note">Request an appointment and follow its status.</span>
+            </div>
+        </section>
+
+        <section class="case-feature case-feature-water" aria-labelledby="fitness-water-title">
+            <div class="case-feature-copy">
+                <p class="eyebrow">05 / Water consumption</p>
+                <h2 id="fitness-water-title">Small sips. <em>Visible progress.</em></h2>
+                <p>Users record water intake and track it over time. The weekly view keeps seven days of entries and updates a bar chart with the total millilitres logged. The history view shows the month’s records as a line graph.</p>
+                <span class="case-feature-note">A weekly snapshot and monthly history.</span>
+            </div>
+            <figure class="case-image-frame case-image-water">
+                <img src="./fitnesswater.png" alt="HuanFitnessPal water intake form with weekly and history chart views" loading="lazy">
+                <figcaption>Water intake entry and consumption charts</figcaption>
+            </figure>
+        </section>
+
+        <div class="case-study-footer">
+            <p>Make wellbeing part of the everyday.</p>
+            <a class="projects-button" href="./projects.html#project-list">Explore more projects <span aria-hidden="true">↗</span></a>
+        </div>
+    </main>
+
+    <footer class="site-footer page-wrap">
+        <span>© <span id="year">2026</span> Emily Ting Yuen Yee. Made with care.</span>
+        <div class="footer-links">
+            <a href="https://github.com/Emily050606?tab=repositories" target="_blank" rel="noreferrer">GitHub <span aria-hidden="true">↗</span></a>
+            <a href="https://www.linkedin.com/in/emily-ting59319028a/" target="_blank" rel="noreferrer">LinkedIn <span aria-hidden="true">↗</span></a>
+            <a href="#top">Back to top ↑</a>
+        </div>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#f6f5f0">
+    <meta name="description" content="Explore Aemy Wardrobe, a 3D modeling e-commerce project featuring virtual outfit previews, account verification, Stripe payments, and personalized recommendations.">
+    <title>Aemy Wardrobe | Emily</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,500;1,600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="portfolio.css">
+    <script src="portfolio.js" defer></script>
+</head>
+<body>
+    <header class="site-header" id="top">
+        <a class="wordmark" href="./index.html" aria-label="Emily, home">emily<span>.</span></a>
+        <nav class="site-nav" aria-label="Main navigation">
+            <a href="./index.html">Home</a>
+            <a href="./projects.html">Projects</a>
+            <a href="./about.html">About</a>
+            <a href="./experience.html">Experience</a>
+            <a class="nav-contact" href="mailto:emilyting05312017@gmail.com">Let's talk <span aria-hidden="true">↗</span></a>
+        </nav>
+    </header>
+
+    <main class="case-study page-wrap">
+        <a class="case-back" href="./index.html#work"><span aria-hidden="true">←</span> Back to selected work</a>
+
+        <section class="case-hero" aria-labelledby="case-title">
+            <div class="case-hero-copy">
+                <p class="eyebrow">Final Year Project <span class="case-eyebrow-divider">/</span> 2025</p>
+                <h1 id="case-title">Aemy <em>Wardrobe.</em></h1>
+                <p class="case-intro">An online clothing experience that brings virtual try-on, thoughtful account verification, and personalized discovery into one shopping journey.</p>
+                <div class="case-facts" aria-label="Project overview">
+                    <div><span>PROJECT</span><strong>3D modeling e-commerce website</strong></div>
+                    <div><span>FOCUS</span><strong>Virtual try-on &amp; online shopping</strong></div>
+                    <div><span>FEATURES</span><strong>3D model · Verification · Stripe</strong></div>
+                </div>
+            </div>
+            <figure class="case-hero-image">
+                <img src="./aemywardrobe.jpeg" alt="Aemy Wardrobe product page showing a 3D clothing model and measurement controls" fetchpriority="high">
+                <figcaption><span>01 — THE VIRTUAL FIT</span><span>Product detail experience</span></figcaption>
+            </figure>
+        </section>
+
+        <section class="case-feature case-feature-model" aria-labelledby="case-model-title">
+            <div class="case-feature-copy">
+                <p class="eyebrow">01 / The product experience</p>
+                <h2 id="case-model-title">See the fit from <em>every angle.</em></h2>
+                <p>This is the 3D modeling experience on the product detail page. Users enter their height, weight, bust, waist, and hip measurements, and the system generates a 3D body model based on those dimensions.</p>
+                <p>The model can be rotated through 360 degrees, zoomed in or out, and moved around, helping shoppers explore how an outfit looks from different perspectives before deciding what to buy.</p>
+                <span class="case-feature-note">A more personal view of online clothing.</span>
+            </div>
+            <figure class="case-image-frame case-image-model">
+                <img src="./aemywardrobe.jpeg" alt="The Aemy Wardrobe 3D model with controls for height, weight, bust, waist, and hip measurements" loading="lazy">
+                <figcaption>Measurement-based 3D model and garment preview</figcaption>
+            </figure>
+        </section>
+
+        <section class="case-security" aria-labelledby="case-security-title">
+            <div class="case-section-heading">
+                <p class="eyebrow">02 / Account protection</p>
+                <h2 id="case-security-title">An extra check when <em>it matters.</em></h2>
+                <p>Two verification steps help confirm the account holder during sign-in: a time-limited email code and an additional security question when activity is flagged as unusual.</p>
+            </div>
+            <div class="case-security-grid">
+                <article class="case-security-card">
+                    <figure class="case-image-frame case-image-otp">
+                        <img src="./aemyotp.jpeg" alt="Aemy Wardrobe email containing a one-time password and its 30-minute validity notice" loading="lazy">
+                        <figcaption>One-time password sent by email</figcaption>
+                    </figure>
+                    <div class="case-card-copy">
+                        <span class="case-step">A · EMAIL OTP</span>
+                        <h3>A code with a time limit.</h3>
+                        <p>After the user reaches the OTP step, the system emails a randomly generated six-digit code. The code is stored in the database with a 30-minute expiry. The system checks the submitted code against the stored value and rejects it once it has expired, so an expired OTP cannot be reused.</p>
+                    </div>
+                </article>
+                <article class="case-security-card">
+                    <figure class="case-image-frame case-image-unusual">
+                        <img src="./aemyunusual.jpeg" alt="Aemy Wardrobe unusual activity check asking the user to answer a security question" loading="lazy">
+                        <figcaption>Security question for unusual activity</figcaption>
+                    </figure>
+                    <div class="case-card-copy">
+                        <span class="case-step">B · UNUSUAL ACTIVITY</span>
+                        <h3>Verify a new sign-in.</h3>
+                        <p>If the captured IP address differs from the one recorded at registration, the user is asked to answer their previously established security question. A correct answer is required to continue to the homepage. If no question was set up during registration, the flow directs the user to the security-question step.</p>
+                    </div>
+                </article>
+            </div>
+            <p class="case-security-note">Together, these checks add extra verification to the sign-in flow; they complement rather than replace broader account security practices.</p>
+        </section>
+
+        <section class="case-feature case-feature-payment" aria-labelledby="case-payment-title">
+            <figure class="case-image-frame case-image-payment">
+                <img src="./aemystripe.jpeg" alt="Stripe checkout page displaying the order total, email, card information, and cardholder fields" loading="lazy">
+                <figcaption>Stripe checkout with order total and payment details</figcaption>
+            </figure>
+            <div class="case-feature-copy">
+                <p class="eyebrow">03 / Checkout</p>
+                <h2 id="case-payment-title">A clear, familiar <em>way to pay.</em></h2>
+                <p>The payment page shows the total amount due and collects the card details, cardholder name, and email needed for checkout. Stripe handles the payment flow, and after a successful payment an invoice is sent to the email address provided.</p>
+                <span class="case-feature-note">Stripe-powered payment and invoice flow.</span>
+            </div>
+        </section>
+
+        <section class="case-feature case-feature-recommendations" aria-labelledby="case-recommendation-title">
+            <div class="case-feature-copy">
+                <p class="eyebrow">04 / Product discovery</p>
+                <h2 id="case-recommendation-title">A little more to <em>love.</em></h2>
+                <p>Personalized recommendations appear in the page header above the product details. By surfacing similar or complementary clothing, the feature helps users discover more options without interrupting their shopping flow.</p>
+                <span class="case-feature-note">Relevant suggestions, right where shoppers need them.</span>
+            </div>
+            <figure class="case-image-frame case-image-recommendations">
+                <img src="./aemyrecommendation.jpeg" alt="Aemy Wardrobe You may also like section showing three recommended dresses" loading="lazy">
+                <figcaption>“You may also like” product recommendations</figcaption>
+            </figure>
+        </section>
+
+        <div class="case-study-footer">
+            <p>Thanks for taking a closer look.</p>
+            <a class="projects-button" href="./projects.html">Explore more projects <span aria-hidden="true">↗</span></a>
+        </div>
+    </main>
+
+    <footer class="site-footer page-wrap">
+        <span>© <span id="year">2026</span> Emily Ting Yuen Yee. Made with care.</span>
+        <div class="footer-links">
+            <a href="https://github.com/Emily050606?tab=repositories" target="_blank" rel="noreferrer">GitHub <span aria-hidden="true">↗</span></a>
+            <a href="https://www.linkedin.com/in/emily-ting59319028a/" target="_blank" rel="noreferrer">LinkedIn <span aria-hidden="true">↗</span></a>
+            <a href="#top">Back to top ↑</a>
+        </div>
+    </footer>
+</body>
+</html>
